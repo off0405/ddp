@@ -1,135 +1,165 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DDP</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
 
 
   <!-- SWIPER CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   <!-- material -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
   <!-- pretnedard -->
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
   <link rel="stylesheet" href="./css/main.css">
 
 
-    <!-- SWIPER JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- main.js -->
-    <script defer src="./js/main.js"></script>
+  <!-- main.js -->
+  <script defer src="./js/main.js"></script>
 </head>
+
 <body>
+  <!-- 사이드 퀵메뉴 -->
+  <div class="side-quick-menu">
+    <a href="javascrip:void(0)">
+      <img src="./images/common/sidequick_btn_menu.png" alt="전체메뉴">
+    </a>
+    <a href="javascrip:void(0)">
+      <img src="./images/common/sidequick_btn_search.png" alt="검색">
+    </a>
+    <a href="javascrip:void(0)">
+      <img src="./images/common/sidequick_btn_global.png" alt="언어선택">
+    </a>
+  </div>
+
+  <!-- 헤더 -->
   <header>
     <div class="header-background">
-        <div class="inner">
-          <div class="nav">
-            <a href="/" class="logo">
-              <img src="./images/common/logo.png" alt="DDP">
-            </a>
-            
-            <div class="main-menu">
-              <ul class="main-menu2">
-                <li class="item">
-                  <a href="javascript:void(0)" class="item_name">DDP 안내</a>
-                  <div class="item-contents">
-                    <div class="contents__menu">
-                      <ul class="inner">
-                        <li><a href="javascript:void(0)">DDP 소개</a></li>
-                        <li><a href="javascript:void(0)">DDP 소식</a></li>
-                        <li><a href="javascript:void(0)">DDP 사람들</a></li>
-                        <li><a href="javascript:void(0)">오시는 길</a></li>
-                        <li><a href="javascript:void(0)">길 안내 서비스</a></li>
-                        <li><a href="javascript:void(0)">DDP 멤버십</a></li>
-                      </ul>
-                    </div>
+      <div class="inner">
+        <div class="nav">
+          <a href="/" class="logo">
+            <img src="./images/common/logo.png" alt="DDP">
+          </a>
+
+          <nav class="main-menu">
+            <ul class="main-menu2">
+              <li class="item">
+                <a href="javascript:void(0)" class="item_name">DDP 안내</a>
+                <div class="item-contents">
+                  <div class="contents__menu">
+                    <ul>
+                      <li><a href="javascript:void(0)">DDP 소개</a></li>
+                      <li><a href="javascript:void(0)">DDP 소식</a></li>
+                      <li><a href="javascript:void(0)">DDP 사람들</a></li>
+                      <li><a href="javascript:void(0)">오시는 길</a></li>
+                      <li><a href="javascript:void(0)">길 안내 서비스</a></li>
+                      <li><a href="javascript:void(0)">DDP 멤버십</a></li>
+                    </ul>
                   </div>
-                </li>
-                
-                <li class="item">
-                  <a href="javascript:void(0)" class="item_name">프로그램</a>
-                  <div class="item-contents">
-                    <div class="contents__menu">
-                      <ul class="inner">
-                        <li><a href="javascript:void(0)">전체 일정 보기</a></li>
-                        <li><a href="javascript:void(0)">전시</a></li>
-                        <li><a href="javascript:void(0)">행사</a></li>
-                        <li><a href="javascript:void(0)">건축투어</a></li>
-                        <li><a href="javascript:void(0)">상설</a></li>
-                      </ul>
-                    </div>
+                </div>
+              </li>
+
+              <li class="item">
+                <a href="javascript:void(0)" class="item_name">프로그램</a>
+                <div class="item-contents">
+                  <div class="contents__menu">
+                    <ul>
+                      <li><a href="javascript:void(0)">전체 일정 보기</a></li>
+                      <li><a href="javascript:void(0)">전시</a></li>
+                      <li><a href="javascript:void(0)">행사</a></li>
+                      <li><a href="javascript:void(0)">건축투어</a></li>
+                      <li><a href="javascript:void(0)">상설</a></li>
+                    </ul>
                   </div>
-                </li>
+                </div>
+              </li>
 
-                <li class="item">
-                  <a href="javascript:void(0)" class="item_name">공간안내</a>
-                  <div class="item-contents">
-                    <div class="contents__menu">
-                      <ul class="inner">
-                        <li><a href="javascript:void(0)">VR 지도</a></li>
-                        <li><a href="javascript:void(0)">층별지도</a></li>
-                        <li><a href="javascript:void(0)">시설</a></li>
-                        <li><a href="javascript:void(0)">스토어&푸드</a></li>
-                        <li><a href="javascript:void(0)">안내센터</a></li>
-                        <li><a href="javascript:void(0)">대관 공간</a></li>
-                      </ul>
-                    </div>
+              <li class="item">
+                <a href="javascript:void(0)" class="item_name">공간안내</a>
+                <div class="item-contents">
+                  <div class="contents__menu">
+                    <ul>
+                      <li><a href="javascript:void(0)">VR 지도</a></li>
+                      <li><a href="javascript:void(0)">층별지도</a></li>
+                      <li><a href="javascript:void(0)">시설</a></li>
+                      <li><a href="javascript:void(0)">스토어&푸드</a></li>
+                      <li><a href="javascript:void(0)">안내센터</a></li>
+                      <li><a href="javascript:void(0)">대관 공간</a></li>
+                    </ul>
                   </div>
-                </li>
+                </div>
+              </li>
 
-                <li class="item">
-                  <a href="javascript:void(0)" class="item_name">고객지원</a>
-                  <div class="item-contents">
-                    <div class="contents__menu">
-                      <ul class="inner">
-                        <li><a href="javascript:void(0)">자주 묻는 질문</a></li>
-                        <li><a href="javascript:void(0)">고객문의</a></li>
-                        <li><a href="javascript:void(0)">이용약관</a></li>
-                        <li><a href="javascript:void(0)">행정서비스 현장</a></li>
-                        <li><a href="javascript:void(0)">안전보건경영</a></li>
-                        <li><a href="javascript:void(0)">사이트맵</a></li>
-                      </ul>
-                    </div>
+              <li class="item">
+                <a href="javascript:void(0)" class="item_name">고객지원</a>
+                <div class="item-contents">
+                  <div class="contents__menu">
+                    <ul>
+                      <li><a href="javascript:void(0)">자주 묻는 질문</a></li>
+                      <li><a href="javascript:void(0)">고객문의</a></li>
+                      <li><a href="javascript:void(0)">이용약관</a></li>
+                      <li><a href="javascript:void(0)">행정서비스 현장</a></li>
+                      <li><a href="javascript:void(0)">안전보건경영</a></li>
+                      <li><a href="javascript:void(0)">사이트맵</a></li>
+                    </ul>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 메인배너 -->
-      <div class="main-banner">
-        <div class="inner">
-          <div class="banner">
-            <img src="./images/main/main_banner01.jpg" alt="banner1">
-          </div>
-          <div class="banner-back">
-
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev">
-              <span class="material-icons">arrow_back</span>
-            </div>
-            <div class="swiper-button-next">
-              <span class="material-icons">arrow_forward</span>
-            </div>
-        </div>
-
+                </div>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
-    <!-- 페이지네이션 추가 -->
+
+    <!-- 메인배너 -->
+    <div class="main-banner promotion">
+      <div class="inner">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="front"><img src="./images/main/main_banner01.jpg" alt="알폰스무하"></div>
+              <div class="banner-back banner01"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="front"><img src="./images/main/main_banner02.png" alt="LUX"></div>
+              <div class="banner-back banner02"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="front"><img src="./images/main/main_banner03.png" alt="미드나잇인서울"></div>
+              <div class="banner-back banner03"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 스와이프 버튼 -->
+        <div class="swiper-button-prev">
+          <span class="material-icons">arrow_back</span>
+        </div>
+        <div class="swiper-button-next">
+          <span class="material-icons">arrow_forward</span>
+        </div>
+
+
+
+      </div>
+
+      <!-- 페이지네이션 추가 -->
 
   </header>
-  
+
+
   <!-- 콘텐츠 시작 -->
   <section class="content1">
     <div class="inner">
@@ -140,17 +170,19 @@
           <span class="h">다양한 프로그램들</span>을 소개합니다.</p>
 
 
-          <a href="javascrip:void(0)" class="more">
-            <span class="material-symbols-outlined plus">add_circle</span>
-            <p class="add">더 많은 프로그램 보기</p>
-          </a>
-        </div>
+        <a href="javascrip:void(0)" class="more">
+          <span class="material-symbols-outlined plus">add_circle</span>
+          <p class="add">더 많은 프로그램 보기</p>
+        </a>
+      </div>
 
       <div class="right">
         <div class="content_item">
           <div class="item_head">
             <a href="javascrip:void(0)" class="event">행사</a>
-            <a href="javascrip:void(0)" class="link"><img src="./images/main/btn_contents_more.png" alt="btn_contents_more"></a>
+            <a href="javascrip:void(0)" class="link">
+              <img src="./images/main/btn_contents_more.png" alt="btn_contents_more">
+            </a>
           </div>
           <a href="javascrip:void(0)">
             <img src="./images/main/main_contents01.png" alt="main_contents01" class="poster">
@@ -162,7 +194,9 @@
         <div class="content_item">
           <div class="item_head">
             <a href="javascrip:void(0)" class="event">행사</a>
-            <a href="javascrip:void(0)" class="link"><img src="./images/main/btn_contents_more.png" alt="btn_contents_more"></a>
+            <a href="javascrip:void(0)" class="link">
+              <img src="./images/main/btn_contents_more.png" alt="btn_contents_more">
+            </a>
           </div>
           <a href="javascrip:void(0)">
             <img src="./images/main/main_contents02.png" alt="main_contents01" class="poster">
@@ -174,7 +208,9 @@
         <div class="content_item">
           <div class="item_head">
             <a href="javascrip:void(0)" class="event">행사</a>
-            <a href="javascrip:void(0)" class="link"><img src="./images/main/btn_contents_more.png" alt="btn_contents_more"></a>
+            <a href="javascrip:void(0)" class="link">
+              <img src="./images/main/btn_contents_more.png" alt="btn_contents_more">
+            </a>
           </div>
           <a href="javascrip:void(0)">
             <img src="./images/main/main_contents03.png" alt="main_contents01" class="poster">
@@ -186,7 +222,9 @@
         <div class="content_item">
           <div class="item_head">
             <a href="javascrip:void(0)" class="event">행사</a>
-            <a href="javascrip:void(0)" class="link"><img src="./images/main/btn_contents_more.png" alt="btn_contents_more"></a>
+            <a href="javascrip:void(0)" class="link">
+              <img src="./images/main/btn_contents_more.png" alt="btn_contents_more">
+            </a>
           </div>
           <a href="javascrip:void(0)">
             <img src="./images/main/main_contents04.png" alt="main_contents01" class="poster">
@@ -198,7 +236,9 @@
         <div class="content_item">
           <div class="item_head">
             <a href="javascrip:void(0)" class="event">전시</a>
-            <a href="javascrip:void(0)" class="link"><img src="./images/main/btn_contents_more.png" alt="btn_contents_more"></a>
+            <a href="javascrip:void(0)" class="link">
+              <img src="./images/main/btn_contents_more.png" alt="btn_contents_more">
+            </a>
           </div>
           <a href="javascrip:void(0)">
             <img src="./images/main/main_contents05.png" alt="main_contents01" class="poster">
@@ -210,7 +250,9 @@
         <div class="content_item">
           <div class="item_head">
             <a href="javascrip:void(0)" class="event">행사</a>
-            <a href="javascrip:void(0)" class="link"><img src="./images/main/btn_contents_more.png" alt="btn_contents_more"></a>
+            <a href="javascrip:void(0)" class="link">
+              <img src="./images/main/btn_contents_more.png" alt="btn_contents_more">
+            </a>
           </div>
           <a href="javascrip:void(0)">
             <img src="./images/main/main_contents06.png" alt="main_contents01" class="poster">
@@ -218,12 +260,14 @@
           <h3>서울라이트 DDP 2023 가을</h3>
           <p>2023-08-31 ~ 2023-09-10</p>
         </div>
-      
+
 
         <div class="content_item">
           <div class="item_head">
             <a href="javascrip:void(0)" class="event">행사</a>
-            <a href="javascrip:void(0)" class="link"><img src="./images/main/btn_contents_more.png" alt="btn_contents_more"></a>
+            <a href="javascrip:void(0)" class="link">
+              <img src="./images/main/btn_contents_more.png" alt="btn_contents_more">
+            </a>
           </div>
           <a href="javascrip:void(0)">
             <img src="./images/main/main_contents07.png" alt="main_contents01" class="poster">
@@ -231,13 +275,15 @@
           <h3>2024 SS서울패션위크</h3>
           <p>2023-09-05 ~ 2023-09-09</p>
         </div>
-      
+
 
 
         <div class="content_item">
           <div class="item_head">
             <a href="javascrip:void(0)" class="event">전시</a>
-            <a href="javascrip:void(0)" class="link"><img src="./images/main/btn_contents_more.png" alt="btn_contents_more"></a>
+            <a href="javascrip:void(0)" class="link">
+              <img src="./images/main/btn_contents_more.png" alt="btn_contents_more">
+            </a>
           </div>
           <a href="javascrip:void(0)">
             <img src="./images/main/main_contents01.png" alt="main_contents01" class="poster">
@@ -245,22 +291,23 @@
           <h3>장소의 순환 : 2023 서울라이트</h3>
           <p>2023-02-01 ~ 2023-08-31</p>
         </div>
-  
+
 
 
         <div class="content_item">
-      <div class="item_head">
-        <a href="javascrip:void(0)" class="event">행사</a>
-        <a href="javascrip:void(0)" class="link"><img src="./images/main/btn_contents_more.png" alt="btn_contents_more"></a>
-      </div>
-      <a href="javascrip:void(0)">
-        <img src="./images/main/main_contents01.png" alt="main_contents01" class="poster">
-      </a>
-      <h3>DDP 멤버십 프로그램 (리뉴얼)</h3>
-      <p>2023-01-01 ~ 2023-12-31</p>
+          <div class="item_head">
+            <a href="javascrip:void(0)" class="event">행사</a>
+            <a href="javascrip:void(0)" class="link">
+              <img src="./images/main/btn_contents_more.png" alt="btn_contents_more">
+            </a>
+          </div>
+          <a href="javascrip:void(0)">
+            <img src="./images/main/main_contents01.png" alt="main_contents01" class="poster">
+          </a>
+          <h3>DDP 멤버십 프로그램 (리뉴얼)</h3>
+          <p>2023-01-01 ~ 2023-12-31</p>
         </div>
       </div>
-
     </div>
     <img src="./images/main/background_logo.png" alt="background_logo" class="background_logo">
 
@@ -274,8 +321,12 @@
         <div class="title_group">
           <p>DDP의 최근 공지사항과 운영 시간을 확인해보세요.</p>
           <div class="btn_more">
-              <a href="javascript:void(0)"><p class="whole">전체보기</p></a>
-              <a href="javascript:void(0)"><img src="./images/main/btn_contents_more02.png" alt="btn_contents_more02"></a>
+            <a href="javascript:void(0)">
+              <p class="whole">전체보기</p>
+            </a>
+            <a href="javascript:void(0)">
+              <img src="./images/main/btn_contents_more02.png" alt="btn_contents_more02">
+            </a>
           </div>
         </div>
       </div>
@@ -293,8 +344,11 @@
           <div class="news-content">
             <p>2023.08.24</p>
             <h3>(재공고) [서울디자인 2023] 리퍼브 디자인 마켓 모집</h3>
-            <span>국내 대표 디자인 산업 비즈니스 MICE 행사 [서울디자인 2023]의 ‘리퍼브 디자인마켓’에 참여할 디자이너 및 디자인스튜디오를 모집합니다.‘리퍼브 디자인마켓’은 미세한 하자가 있는 디자인제품 또는 재고 디자인제품을 할인 금액으로 판매하여 시민 고객에게 사용할 수 있는 기회를 제공하고, 브랜드 인지도를 높일 수 있는, 디자이너와 함께 만들어가는 착한 마켓입니다.
-              기 간: 2023. 10. 24.(화)~ 11. 02(목) ※10.24(화): 프리오픈, 바이어데이</span>
+            <span>
+              국내 대표 디자인 산업 비즈니스 MICE 행사 [서울디자인 2023]의 ‘리퍼브 디자인마켓’에 참여할 디자이너 및 디자인스튜디오를 모집합니다.‘리퍼브 디자인마켓’은 미세한 하자가 있는
+              디자인제품 또는 재고 디자인제품을 할인 금액으로 판매하여 시민 고객에게 사용할 수 있는 기회를 제공하고, 브랜드 인지도를 높일 수 있는, 디자이너와 함께 만들어가는 착한 마켓입니다.
+              기 간: 2023. 10. 24.(화)~ 11. 02(목) ※10.24(화): 프리오픈, 바이어데이
+            </span>
           </div>
         </div>
 
@@ -302,8 +356,12 @@
           <div class="news-content">
             <p>2023.08.24</p>
             <h3>[케이팝 전시 제작 및 운영]우선 협상대상자 발표</h3>
-            <span>「케이팝 전시 제작 및 운영」 사업자 선정을 위한 제안서 평가위원회 심사 결과를 아래와 같이 공고합니다.
-              ○ 평가일시 : 2023. 8. 22(화) 14:00 ~ 15:30 ○ 평가장소 : DDP 디자인랩 1층 운영사무실 앞 회의실4 ○ 심사결과(우선협상대상자) - 1순위: ㈜에스팀 - 2순위: 주식회사 피비지 ○ 평가위원별 평가점수 결과공개 1. 평가개요 ○ 사 업 명 : 케이팝 전시 제작 및 운영 ○ 평가일시 : 2023년 8월 22일(화) 14:00~15:30 ○ 평가위원 : 7명 / 위원명 김○미 김○란, 안○현, 정○천, 추○경, 한○연, 황○준</span>
+            <span>
+              「케이팝 전시 제작 및 운영」 사업자 선정을 위한 제안서 평가위원회 심사 결과를 아래와 같이 공고합니다.
+              ○ 평가일시 : 2023. 8. 22(화) 14:00 ~ 15:30 ○ 평가장소 : DDP 디자인랩 1층 운영사무실 앞 회의실4 ○ 심사결과(우선협상대상자) - 1순위: ㈜에스팀 - 2순위:
+              주식회사 피비지 ○ 평가위원별 평가점수 결과공개 1. 평가개요 ○ 사 업 명 : 케이팝 전시 제작 및 운영 ○ 평가일시 : 2023년 8월 22일(화) 14:00~15:30 ○ 평가위원 :
+              7명 / 위원명 김○미 김○란, 안○현, 정○천, 추○경, 한○연, 황○준
+            </span>
           </div>
         </div>
 
@@ -345,7 +403,7 @@
               <p>20:00</p>
             </div>
           </div>
-          
+
           <div class="date">
             <div class="clock">
               <span class="material-symbols-outlined">calendar_today</span>
@@ -357,21 +415,121 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
 
     <div id="newsletter" class="newsletter">
       <div class="inner">
         <div class="newsletter_group">
           <h1>DDP의 뉴스레터를 받아보세요.</h1>
-          <label for="search"><input type="search" placeholder="이메일 주소를 입력해 주세요." class="input"></label>
+          <label for="search">
+            <input type="search" placeholder="이메일 주소를 입력해 주세요." class="input">
+          </label>
           <button type="submit" class="button">구독신청</button>
         </div>
       </div>
     </div>
   </section>
 
+  <footer>
+    <div class="inner">
+      <div class="first-line">
+        <ul class="menu">
+          <li><a href="javascrip:void(0)">개인정보 처리방침</a></li>
+          <li><a href="javascrip:void(0)">이메일무단수집거부</a></li>
+          <li><a href="javascrip:void(0)">행정서비스 헌장</a></li>
+          <li><a href="javascrip:void(0)">고객지원</a></li>
+          <li><a href="javascrip:void(0)">사이트맵</a></li>
+        </ul>
 
-  
+        <div class="first-line-right">
+          <div class="sns">
+            <span>DDP SNS</span>
+            <div class="icons">
+              <a href="javascrip:void(0)">
+                <img src="./images/main/ico_facebook.png" alt="페이스북">
+              </a>
+              <a href="javascrip:void(0)">
+                <img src="./images/main/ico_instagram.png" alt="인스타그램">
+              </a>
+              <a href="javascrip:void(0)">
+                <img src="./images/main/ico_youtube.png" alt="유튜브">
+              </a>
+              <a href="javascrip:void(0)">
+                <img src="./images/main/ico_blog.png" alt="블로그">
+              </a>
+            </div>
+          </div>
+          <div class="familysite">
+            <span>FAMILY SITE</span>
+            <a href="javascrip:void(0)">
+              <img src="./images/common/arrow_family_sel (1) 1.png" alt="펼쳐보기">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="info">
+        <a href="javascript:void(0)">
+          <img src="./images/common/footer_logo 1.png" alt="DDP로고">
+        </a>
+        <div class="info_text">
+          <p>[04566] 서울시 중구 을지로 281</p>
+          <p>대표이사 : 이경돈</p>
+          <p>대표전화 02-2153-0000</p>
+          <p>사업자번호 : 201-82-08464</p>
+          <p>COPYRIGHT ⓒ 2021 DDP. ALL RIGHTS RESERVED.</p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 퀵버튼 -->
+  <div class="quick-btn">
+    <div class="btn">
+      <a href="javascrip:void(0)" class="btn_text">
+        <img src="./images/common/quick button/gnb_Des_btn 1.png" alt="디자인스토어">
+      </a>
+      <p>디자인<br>스토어</p>
+    </div>
+
+    <div class="btn">
+      <a href="javascrip:void(0)" class="btn_text">
+        <img src="./images/common/quick button/gnb_Mem_btn 1.png" alt="멤버쉽">
+      </a>
+      <p>멤버쉽</p>
+    </div>
+
+
+    <div class="btn">
+      <a href="javascrip:void(0)" class="btn_text">
+        <img src="./images/common/quick button/gnb_Ren_btn 1.png" alt="대관">
+      </a>
+      <p>대관</p>
+    </div>
+
+    <div class="btn">
+      <a href="javascrip:void(0)" class="btn_text">
+        <img src="./images/common/quick button/main btn.png" alt="메인">
+      </a>
+    </div>
+  </div>
+
+
+  <!-- scroll to top -->
+  <div id="to-top">
+    <!-- (초간단) a태그와 css 속성을 이용한 최상단 이동 버튼 구현 -->
+    <a href="#">
+      <span class="material-icons">arrow_upward</span>
+    </a>
+  </div>
+
 </body>
+
 </html>

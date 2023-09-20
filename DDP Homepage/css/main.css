@@ -6,7 +6,6 @@ body {
   color: #333;
   /* 위 속성들은 모두 상속되기에 전체 스타일을 한번에 제어 */
   overflow-x: hidden;
-  box
 }
 
 img {
@@ -16,8 +15,11 @@ img {
 
 a { 
   text-decoration: none;
+  color: #333;
 }
 
+
+/* 헤더 */
 .header-background {
   width: 100%;
   height: 420px;
@@ -29,10 +31,9 @@ a {
 }
 
 .inner {
-  max-width: 1440px; /* 반응형 작업을 위해 */
+  max-width: 1440px;
   margin: 0 auto;
-  position: relative; /* inner div 기준으로 내부 요소를 배치하기 위해 */
-}
+  position: relative;}
 
 .header-background .inner .nav {
   display: flex;
@@ -75,6 +76,7 @@ a {
   line-height: 30px;
   text-align: center;
   display: none;
+  z-index: 3;
   }
 
 .main-menu .main-menu2 li.item:hover .item-contents {
@@ -86,7 +88,32 @@ a {
   color: #333;
 }
 
-.banner {
+/* 사이드 퀵 메뉴 */
+.side-quick-menu {
+  background-color: transparent;
+  border-left: 1px solid #fff;
+  width: 88px;
+  height: 100vw;
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-quick-menu a:nth-child(2){
+  padding-top: 53px;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+/* 배너 */
+.front {
   width: 1270px;
   height: 390px;
   background-color: #333;
@@ -97,7 +124,7 @@ a {
 
 }
 
-.banner-back {
+.banner-back.banner01 {
   width: 1270px;
   height: 390px;
   background-color: #E4864D;
@@ -106,7 +133,26 @@ a {
   top: -120px;
 }
 
-.main-banner .banner img {
+.banner-back.banner02 {
+  width: 1270px;
+  height: 390px;
+  position: absolute;
+  left: 120px;
+  top: -120px;
+  background-color: #4988E8;
+}
+
+.banner-back.banner03 {
+  width: 1270px;
+  height: 390px;
+  position: absolute;
+  left: 120px;
+  top: -120px;
+  background-color: #556277;
+}
+
+
+.main-banner .front img {
   display: block;
   width: 1270px;
   height: 390px;
@@ -114,59 +160,76 @@ a {
 
 
 /* 스와이퍼 페이지네이션 */
-.main-banner .swiper-pagination {
-  position: absolute;
-  top: 600px;
-  z-index: 1; /* 헤더의 z-index가 9이기 때문에 1로 덮어씀 */
-  background-color: #ff0;
+.main-banner.promotion {
+  /* z-index: 20; */
 }
-.main-banner .swiper-pagination .swiper-pagination-bullet {
+.promotion.hide {
+
+  height: 0;
+}
+.promotion .swiper {
+  /* 이미지(819px) 슬라이드 3개 && 사이 여백(10px) 2개 = 2477px */
+  /* width: calc(819px * 3 + 10px * 2); */
+  height: 553px;
+  flex-shrink: 0;
+  
+}
+.promotion .swiper-slide {
+  /* 모든 슬라이드는 반투명하게, active 한 것만 불투명하게
+    => 개발자 도구로 클래스값 확인
+  */
+  opacity: 0;
+  transition: opacity 1s;
+  position: relative;
+}
+.promotion .swiper-slide-active {
+  opacity: 1;
+}
+
+.promotion .swiper-pagination {
+  position: absolute;
+  bottom: 40px;
+  z-index: 1; /* 헤더의 z-index가 9이기 때문에 1로 덮어씀 */
+}
+.promotion .swiper-pagination .swiper-pagination-bullet {
   /* 기존 배경색은 투명하게 숨기고, 배경 이미지를 사용 */
   background-color: transparent;
-  background-image: url("../images/main/main-banner_slide_pager.png");
+  background-image: url("../images/promotion_slide_pager.png");
   width: 13px;
   height: 12px;
 }
-.main-banner .swiper-pagination .swiper-pagination-bullet-active {
-  background-image: url("../images/main/main-banner_pager_on.png");
+.promotion .swiper-pagination .swiper-pagination-bullet-active {
+  background-image: url("../images/promotion_slide_pager_on.png");
 }
-
-/* 스와이퍼 버튼 */
-.main-banner .swiper-button-prev,
-.main-banner .swiper-button-next {
+.promotion .swiper-button-prev,
+.promotion .swiper-button-next {
   width: 42px;
   height: 42px;
-  text-align: center;
-  border: 1px solid #fff;
+  border: 2px solid #333;
   border-radius: 50%;
   position: absolute;
-  top: 429px;
+  top: 300px;
   z-index: 1;
-  color: #fff;
+  color: #333;
   transition: 0.4s;
 }
-
-.main-banner .swiper-button-prev .material-icons,
-.main-banner .swiper-button-next .material-icons {
-  line-height: 42px;
-}
-
-
-.main-banner .swiper-button-prev {
+.promotion .swiper-button-prev {
   /* 가운데로 몰아넣고 마진으로 위치 조정 */
-  left: 1543px;
+  left: 50%;
+  margin-left: -480px;
 }
-.main-banner .swiper-button-next {
+.promotion .swiper-button-next {
   /* 가운데로 몰아넣고 마진으로 위치 조정 */
-  left: 1600px;
+  right: 50%;
+  margin-right: -480px;
 }
-.main-banner .swiper-button-prev:hover,
-.main-banner .swiper-button-next:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+.promotion .swiper-button-prev:hover,
+.promotion .swiper-button-next:hover {
+  background-color: #333;
   color: #fff;
 }
-.main-banner .swiper-button-prev::after,
-.main-banner .swiper-button-next::after {
+.promotion .swiper-button-prev::after,
+.promotion .swiper-button-next::after {
   display: none;
 }
 
@@ -176,7 +239,7 @@ a {
 /* section content 1 */
 section.content1 {
   position: relative;
-  top: 300px;
+  padding-top: 350px;
 }
 
 .left {
@@ -285,8 +348,12 @@ h4 {
 
 /* notice & news */
 
+.content2 {
+  padding-top: 150px;
+  height: 788px;
+
+}
 .content2 .inner {
-  top: 400px;
 }
 
 .inner .title {
@@ -370,11 +437,10 @@ h4 {
   border-top: 1px solid #D9D9D9;
   width: 100%;
   position: absolute;
-  top: 1000px;
 }
 
 .bottom .inner:nth-child(2) {
-  top: 1000px;
+  padding-top: 1000px;
   padding: 44px 0;
 }
 
@@ -492,8 +558,10 @@ margin-right: 17px;
 
 .newsletter {
   width: 100%;
-  background-color: black;
-  top: 1004px;
+  background-image: url('../images/main/background_newsletter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
 }
 
@@ -502,8 +570,6 @@ margin-right: 17px;
 .bottom .newsletter .inner {
   height: 304px;
   position: relative;
-  background-image: url('../images/main/background_newsletter.png');
-  top: 1004px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -538,4 +604,145 @@ button.button {
   font-size: 20px;
   font-family: 'Pretendard', sans-serif;
   }
+
+
+  /* 푸터 */
+  footer {
+    background-color: #000;
+    border-top: 1px solid #333;
+  }
+  
+  footer .inner {
+    padding: 40px 0 60px;
+  }
+
+  .first-line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first-line-right {
+    display: flex;
+    column-gap: 100px;
+  }
+  
+  footer .menu {
+    display: flex;
+  }
+  
+  footer .menu li {
+    position: relative;
+  }
+  
+  footer .menu li::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #555;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  
+  footer .menu li:first-child:before {
+    display: none;
+  }
+  
+  footer .menu li a {
+    display: block;
+    padding: 15px;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .info {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .info_text {
+    font-size: 14px;
+    padding-left: 30px;
+    font-weight: 600;
+    color: #747474;
+  }
+
+  .familysite {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  .familysite span {
+    color: #fff;
+  }
+  
+  .sns {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-right: 20px;
+  }
+
+  .sns span {
+    color: #fff;
+  }
+
+  .icons {
+    display: flex;
+    column-gap: 10px;
+  }
+
+
+  /* SCROLL TO TOP */
+#to-top {
+  width: 42px;
+  height: 42px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999999;
+  opacity: 0;
+}
+
+#to-top a {
+  color: #fff;
+}
+
+/* 퀵버튼 */
+
+.quick-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.btn {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 16px;
+  
+}
+
+.quick-btn > .btn > .btn_text {
+  padding-top: 10;
+}
 
