@@ -94,17 +94,23 @@ console.log(sideQuck);
 // 스크롤 400 이상일 때, scroll이라는 클래스 추가
 
 
+
+new Swiper('.content2 .inner .swiper.news', {
+  direction: 'horizontal', // 수평 슬라이드(기본값)
+  loop: true, // 반복 재생 여부, 1 -> 2 -> 3 -> 4 -> 다시 1
+  slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수(기본값: 1)
   
+  pagination: { // 페이지 번호 사용
+    el: '.content2 .inner newss.swiper-pagination', // 페이지 번호 요소 선택자
+    clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
+  },
+  navigation: { // 슬라이드 이전/다음 버튼 사용
+    nextEl: '.content2 .inner .newss.swiper-button-next', // 다음 버튼 요소
+    prevEl: '.content2 .inner .newss.swiper-button-prev' // 이전 버튼 요소
+  }
+});
 
 
-// new Swiper('.content2 .news', {
-//   direction: 'horizontal', // 수평 슬라이드(기본값)
-//   pagination: { // 페이지 번호 사용
-//     el: '.news-pagination', // 페이지 번호 요소 선택자
-//     clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
-//   },
-//   navigation: { // 슬라이드 이전/다음 버튼 사용
-//     nextEl: '.news-button-next', // 다음 버튼 요소
-//     prevEl: '.news-button-prev' // 이전 버튼 요소
-//   }
-// });
+
+
+
