@@ -26,20 +26,56 @@
   <!-- SWIPER JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
   <!-- main.js -->
   <script defer src="./js/main.js"></script>
 </head>
 
 <body>
+  <!-- 퀵버튼 -->
+  <div class="quick-btn">
+    <div class="btn btn1">
+      <a href="javascrip:void(0)" class="btn_text">
+        <img src="./images/common/quick button/gnb_Des_btn 1.png" alt="디자인스토어">
+      </a>
+      <p>디자인<br>스토어</p>
+    </div>
+
+    <div class="btn btn2">
+      <a href="javascrip:void(0)" class="btn_text">
+        <img src="./images/common/quick button/gnb_Mem_btn 1.png" alt="멤버쉽">
+      </a>
+      <p>멤버쉽</p>
+    </div>
+
+
+    <div class="btn btn3">
+      <a href="javascrip:void(0)" class="btn_text">
+        <img src="./images/common/quick button/gnb_Ren_btn 1.png" alt="대관">
+      </a>
+      <p>대관</p>
+    </div>
+
+    <div class="btn btn4">
+      <a href="/" class="btn_text">
+        <img src="./images/common/quick button/main btn.png" alt="메인">
+      </a>
+    </div>
+  </div>
   <!-- 사이드 퀵메뉴 -->
   <div class="side-quick-menu">
-    <a href="javascrip:void(0)">
+    <a href="javascript:void(0)">
       <img src="./images/common/sidequick_btn_menu.png" alt="전체메뉴">
     </a>
-    <a href="javascrip:void(0)">
+    <a href="javascript:void(0)">
       <img src="./images/common/sidequick_btn_search.png" alt="검색">
     </a>
-    <a href="javascrip:void(0)">
+    <a href="/index.html">
       <img src="./images/common/sidequick_btn_global.png" alt="언어선택">
     </a>
   </div>
@@ -124,38 +160,38 @@
     </div>
 
     <!-- 메인배너 -->
-    <div class="main-banner promotion">
-      <div class="inner">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="front"><img src="./images/main/main_banner01.jpg" alt="알폰스무하"></div>
-              <div class="banner-back banner01"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="front"><img src="./images/main/main_banner02.png" alt="LUX"></div>
-              <div class="banner-back banner02"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="front"><img src="./images/main/main_banner03.png" alt="미드나잇인서울"></div>
-              <div class="banner-back banner03"></div>
-            </div>
+    <div class="main-banner">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="front"><img src="./images/main/main_banner01.jpg" alt="알폰스무하"></div>
+            <div class="banner-back banner01"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front"><img src="./images/main/main_banner02.png" alt="LUX"></div>
+            <div class="banner-back banner02"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front"><img src="./images/main/main_banner03.png" alt="미드나잇인서울"></div>
+            <div class="banner-back banner03"></div>
           </div>
         </div>
-
-        <!-- 스와이프 버튼 -->
-        <div class="swiper-button-prev">
-          <span class="material-icons">arrow_back</span>
-        </div>
-        <div class="swiper-button-next">
-          <span class="material-icons">arrow_forward</span>
-        </div>
-
-
-
       </div>
 
-      <!-- 페이지네이션 추가 -->
+      <!-- 스와이프 버튼 -->
+      <div class="swiper-button-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="swiper-button-next">
+        <span class="material-icons">arrow_forward</span>
+      </div>
+
+      <!-- 페이지네이션 -->
+      <div class="swiper-pagination"></div>
+
+
+    </div>
+
 
   </header>
 
@@ -372,7 +408,42 @@
             <img src="./images/main/news2.png" alt="news2" class="news_img">
           </div>
         </div>
+
+        <div class="news1">
+          <div class="news-content">
+            <p>2023.08.16</p>
+            <h3>[2023 디자인스타트업패키지] 4회차 세미나 & 워크샵 참가자 모집안내</h3>
+            <img src="./images/main/news2.png" alt="news2" class="news_img">
+          </div>
+        </div>
+
+        <div class="news1">
+          <div class="news-content">
+            <p>2023.08.16</p>
+            <h3>[2023 디자인스타트업패키지] 4회차 세미나 & 워크샵 참가자 모집안내</h3>
+            <img src="./images/main/news2.png" alt="news2" class="news_img">
+          </div>
+        </div>
+
+        <div class="news1">
+          <div class="news-content">
+            <p>2023.08.16</p>
+            <h3>[2023 디자인스타트업패키지] 4회차 세미나 & 워크샵 참가자 모집안내</h3>
+            <img src="./images/main/news2.png" alt="news2" class="news_img">
+          </div>
+        </div>
+
+        <!-- 스와이프 버튼 -->
+        <div class="news-button-prev">
+          <span class="material-icons">arrow_back</span>
+        </div>
+        <div class="news-button-next">
+          <span class="material-icons">arrow_forward</span>
+        </div>
+
         <!-- 페이지네이션 추가 -->
+        <div class="news-pagination"></div>
+
       </div>
     </div>
   </section>
@@ -490,40 +561,11 @@
     </div>
   </footer>
 
-  <!-- 퀵버튼 -->
-  <div class="quick-btn">
-    <div class="btn">
-      <a href="javascrip:void(0)" class="btn_text">
-        <img src="./images/common/quick button/gnb_Des_btn 1.png" alt="디자인스토어">
-      </a>
-      <p>디자인<br>스토어</p>
-    </div>
 
-    <div class="btn">
-      <a href="javascrip:void(0)" class="btn_text">
-        <img src="./images/common/quick button/gnb_Mem_btn 1.png" alt="멤버쉽">
-      </a>
-      <p>멤버쉽</p>
-    </div>
-
-
-    <div class="btn">
-      <a href="javascrip:void(0)" class="btn_text">
-        <img src="./images/common/quick button/gnb_Ren_btn 1.png" alt="대관">
-      </a>
-      <p>대관</p>
-    </div>
-
-    <div class="btn">
-      <a href="javascrip:void(0)" class="btn_text">
-        <img src="./images/common/quick button/main btn.png" alt="메인">
-      </a>
-    </div>
-  </div>
 
 
   <!-- scroll to top -->
-  <div id="to-top">
+  <div id="to-top" class="to-top">
     <!-- (초간단) a태그와 css 속성을 이용한 최상단 이동 버튼 구현 -->
     <a href="#">
       <span class="material-icons">arrow_upward</span>
