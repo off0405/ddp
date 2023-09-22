@@ -87,20 +87,15 @@ window.addEventListener('scroll', function () {
   }; 
 })
 
-const quickSpan = document.querySelectorAll('.side-quick-menu > a > span')
+const quickSpan1 = document.querySelector('.quickspan1')
 
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 600) {
-    quickSpan.classList.add('.black');
-  }
-})
+// 스크롤 500 이상일 떄, black이라는 클래스 추가
 
-// 
+if (window.scrollY > 500) {
+  quickSpan1.classList.add('.black')
+}
 
-const sideQuck = document.querySelector('.side-quick-menu')
-console.log(sideQuck);
 
-// 스크롤 400 이상일 때, scroll이라는 클래스 추가
 
 
 

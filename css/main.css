@@ -111,14 +111,11 @@ header {
   align-items: center;
 }
 
-.side-quick-menu > a > span {
+.side-quick-menu>a>span {
   color: #fff;
   font-weight: 500;
 }
 
-.black {
-  color: #000;
-}
 
 
 
@@ -241,7 +238,7 @@ header {
   left: 1305px;
   bottom: 150px;
   width: 100px;
-  
+
   /* background-color: black; */
   /* 헤더의 z-index가 9이기 때문에 1로 덮어씀 */
 }
@@ -429,7 +426,7 @@ h4 {
 }
 
 .news .news1 {
-  width: 480px !important; 
+  width: 480px !important;
   height: 470px;
   display: flex;
   justify-content: center;
@@ -464,7 +461,7 @@ h4 {
 }
 
 /* 스와이프버튼 */
-.content2 > .newss.swiper-button-prev {
+.content2>.newss.swiper-button-prev {
   position: absolute;
   opacity: 1;
   left: 500px;
@@ -473,13 +470,13 @@ h4 {
   cursor: pointer;
 }
 
-.content2 > .newss.swiper-button-prev span,
-.content2 > .newss.swiper-button-next span {
+.content2>.newss.swiper-button-prev span,
+.content2>.newss.swiper-button-next span {
   font-weight: 700;
 }
 
 
-.content2 > .newss.swiper-button-next {
+.content2>.newss.swiper-button-next {
   left: 540px;
   top: 862px;
   color: #000;
@@ -490,10 +487,10 @@ h4 {
 
 .newss.swiper-scrollbar {
   background: #d6d6d6;
-  
+
 }
 
-.content2 > .newss.swiper-scrollbar {
+.content2>.newss.swiper-scrollbar {
   border-radius: 2px;
   height: 3px;
   width: 200px;
@@ -810,7 +807,7 @@ footer .menu li a {
   bottom: 30px;
   z-index: 23;
   text-align: center;
-  
+
   /* opacity: 0; */
 }
 
@@ -842,7 +839,7 @@ footer .menu li a {
 
 .quick-btn>.btn>.btn_text {
   padding-top: 10;
-  
+
 }
 
 
@@ -852,16 +849,18 @@ footer .menu li a {
   opacity: 0;
   transition: 1s;
 }
+
 .back-to-position.to-left {
   /* 오른쪽에서 왼쪽으로 나타나는 */
   transform: translateX(150px);
 }
+
 .back-to-position.to-right {
   /* 왼쪽에서 오른쪽으로 나타나는 */
   transform: translateX(-150px);
 }
+
 .show .back-to-position {
   opacity: 1;
   transform: translateX(0);
 }
-
