@@ -87,13 +87,12 @@ window.addEventListener('scroll', function () {
   }; 
 })
 
-const quickSpan1 = document.querySelector('.quickspan1')
-
 // 스크롤 500 이상일 떄, black이라는 클래스 추가
+// const quickSpan1 = document.querySelector('.quickspan1')
 
-if (window.scrollY > 500) {
-  quickSpan1.classList.add('.black')
-}
+// if (window.scrollY > 500) {
+//   quickSpan1.classList.add('.black')
+// }
 
 
 
@@ -138,3 +137,32 @@ spyEls.forEach(function (spyEl) {
 
 
 
+// const promotionEl = document.querySelector('section.promotion');
+// const promotionToggleBtn = document.querySelector('.toggle-promotion');
+// const promotionToggleIcon = promotionToggleBtn.querySelector('.material-icons');
+
+// // Quiz
+// // 토글 버튼을 클릭했을 때 아래 기능을 실행
+// // 프로모션 요소에 'hide'라는 클래스 값이 있으면 보임 처리!('hide' 클래스를 제거하고 아이콘 모양을 'upload'로 설정)
+// // 그렇지 않으면 숨김 처리!('hide' 클래스를 추가하고 아이콘 모양을 'download'로 설정)
+// promotionToggleBtn.addEventListener('click', function () {
+//   // 실행할 코드들
+//   if (promotionEl.classList.contains('hide')) {
+//     // 보임 처리!
+//     promotionEl.classList.remove('hide');
+//     promotionToggleIcon.textContent = 'upload'; // 아이콘 모양 바꾸기
+//   } else {
+//     // 숨김 처리!
+//     promotionEl.classList.add('hide');
+//     promotionToggleIcon.textContent = 'download'; // 아이콘 모양 바꾸기
+//   }
+// });
+
+
+const symbol = document.querySelector('.material-symbols-outlined.plus')
+
+symbol.addEventListener('mouseover', function () {
+  console.log(symbol);
+  symbol.textContent = 'add_circle';
+  // console.log('마우스');
+});
