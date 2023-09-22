@@ -22,6 +22,12 @@
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
   <link rel="stylesheet" href="./css/main.css">
 
+  <!-- ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
   <!-- SWIPER JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -70,13 +76,13 @@
   <!-- 사이드 퀵메뉴 -->
   <div class="side-quick-menu">
     <a href="javascript:void(0)">
-      <img src="./images/common/sidequick_btn_menu.png" alt="전체메뉴">
+      <span class="material-symbols-outlined">menu</span>
     </a>
     <a href="javascript:void(0)">
-      <img src="./images/common/sidequick_btn_search.png" alt="검색">
+      <span class="material-symbols-outlined">search</span>
     </a>
     <a href="/index.html">
-      <img src="./images/common/sidequick_btn_global.png" alt="언어선택">
+      <span class="material-symbols-outlined">language</span>
     </a>
   </div>
 
@@ -197,9 +203,9 @@
 
 
   <!-- 콘텐츠 시작 -->
-  <section class="content1">
+  <section class="content1 scroll-spy">
     <div class="inner">
-      <div class="left">
+      <div class="left back-to-position to-right">
         <h4>Programs</h4>
         <p>더 나은 생활을 <span class="bold">꿈꾸고, 만들고, 누리는</span><br>
           디자인 창조산업의 발신지 DDP의<br>
@@ -212,7 +218,7 @@
         </a>
       </div>
 
-      <div class="right">
+      <div class="right back-to-position to-left">
         <div class="content_item">
           <div class="item_head">
             <a href="javascrip:void(0)" class="event">행사</a>
@@ -350,9 +356,9 @@
   </section>
 
 
-  <section class="content2">
+  <section class="content2 scroll-spy">
     <div class="inner">
-      <div class="title">
+      <div class="title back-to-position to-right">
         <h4>Notices & News</h4>
         <div class="title_group">
           <p>DDP의 최근 공지사항과 운영 시간을 확인해보세요.</p>
@@ -366,18 +372,21 @@
           </div>
         </div>
       </div>
-      
-      <div class="swiper news">
-        <div class="newss swiper-wrapper">
-          <div class="news1 swiper-slide">
+    </div>
+    <div class="swiper news back-to-position to-left">
+      <div class="newss swiper-wrapper">
+        <div class="news1 swiper-slide">
+          <a href="javascrip:void(0)">
             <div class="news-content">
               <p>2023.09.01</p>
               <h3>DDP 멤버십 9월의 영감플러스: 런업편</h3>
               <img src="./images/main/news1.png" alt="news1" class="news_img">
             </div>
-          </div>
+          </a>
+        </div>
 
-          <div class="news1 swiper-slide">
+        <div class="news1 swiper-slide">
+          <a href="javascrip:void(0)">
             <div class="news-content">
               <p>2023.08.24</p>
               <h3>(재공고) [서울디자인 2023] 리퍼브 디자인 마켓 모집</h3>
@@ -387,76 +396,93 @@
                 기 간: 2023. 10. 24.(화)~ 11. 02(목) ※10.24(화): 프리오픈, 바이어데이
               </span>
             </div>
-          </div>
+          </a>
+        </div>
 
-          <div class="news1 swiper-slide">
-            <div class="news-content">
-              <p>2023.08.24</p>
-              <h3>[케이팝 전시 제작 및 운영]우선 협상대상자 발표</h3>
-              <span>
-                「케이팝 전시 제작 및 운영」 사업자 선정을 위한 제안서 평가위원회 심사 결과를 아래와 같이 공고합니다.
-                ○ 평가일시 : 2023. 8. 22(화) 14:00 ~ 15:30 ○ 평가장소 : DDP 디자인랩 1층 운영사무실 앞 회의실4 ○ 심사결과(우선협상대상자) - 1순위: ㈜에스팀 -
-                2순위:
-                주식회사 피비지 ○ 평가위원별 평가점수 결과공개 1. 평가개요 ○ 사 업 명 : 케이팝 전시 제작 및 운영 ○ 평가일시 : 2023년 8월 22일(화) 14:00~15:30 ○ 평가위원
-                :
-                7명 / 위원명 김○미 김○란, 안○현, 정○천, 추○경, 한○연, 황○준
-              </span>
-            </div>
-          </div>
-
-          <div class="news1 swiper-slide">
-            <div class="news-content">
-              <p>2023.08.16</p>
-              <h3>[2023 디자인스타트업패키지] 4회차 세미나 & 워크샵 참가자 모집안내</h3>
-              <img src="./images/main/news2.png" alt="news2" class="news_img">
-            </div>
-          </div>
-
-          <div class="news1 swiper-slide">
-            <div class="news-content">
-              <p>2023.08.16</p>
-              <h3>[2023 디자인스타트업패키지] 4회차 세미나 & 워크샵 참가자 모집안내</h3>
-              <img src="./images/main/news2.png" alt="news2" class="news_img">
-            </div>
-          </div>
-
-          <div class="news1 swiper-slide">
-            <div class="news-content">
-              <p>2023.08.16</p>
-              <h3>[2023 디자인스타트업패키지] 4회차 세미나 & 워크샵 참가자 모집안내</h3>
-              <img src="./images/main/news2.png" alt="news2" class="news_img">
-            </div>
-          </div>
-
-          <div class="news1 swiper-slide">
-            <div class="news-content">
-              <p>2023.08.16</p>
-              <h3>[2023 디자인스타트업패키지] 4회차 세미나 & 워크샵 참가자 모집안내</h3>
-              <img src="./images/main/news2.png" alt="news2" class="news_img">
-            </div>
+        <div class="news1 swiper-slide">
+          <div class="news-content">
+            <p>2023.08.24</p>
+            <h3>[케이팝 전시 제작 및 운영]우선 협상대상자 발표</h3>
+            <span>
+              「케이팝 전시 제작 및 운영」 사업자 선정을 위한 제안서 평가위원회 심사 결과를 아래와 같이 공고합니다.
+              ○ 평가일시 : 2023. 8. 22(화) 14:00 ~ 15:30 ○ 평가장소 : DDP 디자인랩 1층 운영사무실 앞 회의실4 ○ 심사결과(우선협상대상자) - 1순위: ㈜에스팀 -
+              2순위:
+              주식회사 피비지 ○ 평가위원별 평가점수 결과공개 1. 평가개요 ○ 사 업 명 : 케이팝 전시 제작 및 운영 ○ 평가일시 : 2023년 8월 22일(화) 14:00~15:30 ○ 평가위원
+              :
+              7명 / 위원명 김○미 김○란, 안○현, 정○천, 추○경, 한○연, 황○준
+            </span>
           </div>
         </div>
-      </div>
-      
-      <!-- 스와이프 버튼 -->
-      <div class="newss swiper-button-prev">
-        <span class="material-icons">arrow_back</span>
-      </div>
-      <div class="newss swiper-button-next">
-        <span class="material-icons">arrow_forward</span>
-      </div>
 
-      <!-- 페이지네이션 추가 -->
-      <div class="newss swiper-pagination"></div>
+        <div class="news1 swiper-slide">
+          <a href="javascrip:void(0)">
+            <div class="news-content">
+              <p>2023.08.16</p>
+              <h3>[2023 디자인스타트업패키지] 4회차 세미나 & 워크샵 참가자 모집안내</h3>
+              <img src="./images/main/news2.png" alt="news2" class="news_img">
+            </div>
+          </a>
+        </div>
+
+        <div class="news1 swiper-slide">
+          <a href="javascrip:void(0)">
+            <div class="news-content">
+              <p>2023.09.16</p>
+              <h3>DDP디자인론칭페어</h3>
+              <span>
+                ‘DDP 디자인론칭페어’는 2019년부터 제조 산업의 경쟁력을 향상시키고 디자인산업 진흥을 위해...
+              </span>
+              <img src="./images/main/news3.jpg" alt="news2" class="news_img">
+            </div>
+          </a>
+        </div>
+
+        <div class="news1 swiper-slide">
+          <a href="javascrip:void(0)">
+            <div class="news-content">
+              <p>2023.09.02</p>
+              <h3>[서울디자인 2023] 리퍼브 디자인마켓 참여자 선정 심사 결과</h3>
+              <span>
+                [서울디자인 2023] 리퍼브 디자인마켓 참여자 선정 심사 결과를 아래와 같이 공고합니다.
+                선정 업체 리스트(가나다순)
+                업체명 대표명(담당자) 대표 연락처 뒷번호
+                배스랩 유○혜 6985
+                비아케이스튜디오 안○경 1151
+                빠다앤마가린 이○준 3920
+                샤인힐 김○연 7730
+                애리스 장○리 5386
+                프레임에디션 심○경 1163
+                하이바이하이 김○영 2011
+                휴움 김○나 0581
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 페이지네이션 추가 -->
+    <div class="newss swiper-pagination"></div>
+    <div class="newss swiper-scrollbar"></div>
+
+    <!-- 스와이프 버튼 -->
+    <div class="newss swiper-button-prev">
+      <span class="material-symbols-outlined">chevron_left</span>
+    </div>
+    <div class="newss swiper-button-next">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </div>
+
+
 
 
   </section>
 
-  <section class="bottom">
+  <section class="bottom scroll-spy">
     <div class="line"></div>
     <div id="time" class="inner">
       <div class="content3">
-        <div class="title_time">
+        <div class="title_time ">
           <h1>운영시간 안내</h1>
           <img src="./images/main/btn_contents_more02.png" alt="btn_contents_more02">
           <p>※ 프로그램에 따라 일부공간 탄력운영</p>
@@ -493,7 +519,7 @@
       </div>
     </div>
 
-    <div id="newsletter" class="newsletter">
+    <div id="newsletter" class="newsletter scroll-spy2">
       <div class="inner">
         <div class="newsletter_group">
           <h1>DDP의 뉴스레터를 받아보세요.</h1>
