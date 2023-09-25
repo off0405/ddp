@@ -1163,7 +1163,7 @@ footer .menu li a {
 
 
 
-/* ~479px 이하일때 */
+/* ~767px 이하일때 */
 @media screen and (max-width: 767px) {
   body {
     overflow-x: hidden;
@@ -1179,8 +1179,12 @@ footer .menu li a {
     /* width: 100% */
   }
 
+  .main-menu {
+    display: none;
+  }
+
   .inner {
-    max-width: 650px;
+    max-width: 85%;
     margin: 0 auto;
     position: relative;
   }
@@ -1191,7 +1195,7 @@ footer .menu li a {
 
   .swiper-slide .front img {
     width: 100%;
-    height: 210px;
+    height: auto;
     position: absolute;
     right: 0;
     left: 0;
