@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>join</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- pretnedard -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css">
+
+
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #333;
+      overflow-x: hidden;
+      background-color: #f5f5f5;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .inner {
+      width: 666px;
+      margin: 50px auto;
+      padding: 50px 76px 20px;
+      background-color: #fff;
+      border-top: 3px solid #E73A3A;
+    }
+
+    .input_box {
+      border: 1px solid #bbb;
+      outline: none;
+      transition: 0.5s;
+      padding: 0 19px;
+      width: 626px;
+      height: 46px;
+      margin-bottom: 10px;
+    }
+
+    .small_text {
+      font-size: 11px;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      margin-top: -7px;
+      color: #999;
+    }
+
+    input:focus {
+      border: 1px solid #E73A3A;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #E73A3A;
+      padding-bottom: 14px;
+    }
+
+    .part1 {
+      position: relative;
+    }
+
+    .id {
+      display: flex;
+      position: relative;
+
+    }
+
+
+    .phone-detail.input_box {
+      width: 100px;
+      height: 46px;
+    }
+
+    .phone {
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .phone span {
+      display: inline-block;
+      width: 40px;
+      text-align: center;
+    }
+
+    .button {
+      width: 140px;
+      height: 49px;
+      font-size: 12px;
+      border: none;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #cccccc;
+    }
+
+    .phone-certi {
+      position: relative;
+    }
+
+    .phone-certi label input.input_box {
+      width: 476px;
+    }
+
+    .essntial {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 20px;
+    }
+
+    .opt h4 {
+      color: #333;
+    }
+
+
+    .sex {
+      margin-top: 10px;
+    }
+
+    .sex span {
+      padding-right: 30px;
+    }
+
+    .sex label {
+      padding-right: 20px;
+    }
+
+
+    .agree {
+      
+      padding: 30px  40px;
+      border: 1px solid #bbb;
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 20px;
+      display: flex;
+      font-size: 11px;
+    }
+
+    .agree .all{
+      padding-right: 70px;
+      display: flex;
+      align-items: center;
+      
+    }
+    .agree label {
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .end {
+      width: 282px;
+      height: 52px;
+      display: block;
+      margin: 40px auto;
+      height: 49px;
+      font-size: 16px;
+      font-weight: 800;
+      border: none;
+      box-sizing: border-box;
+      background-color: #E73A3A;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .end:hover {
+      background-color: #b11010;
+
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+  <div class="inner">
+    <div class="essntial">
+      <h4>필수항목</h4>
+      <div class="part1">
+        <div class="id">
+          <label><input type="text" placeholder="아이디" class="input_box"></label>
+          <span class="small_text">3~15자의 영문/숫자를 조합하여 입력</span>
+        </div>
+
+        <div class="pw">
+          <label><input type="text" placeholder="비밀번호" class="input_box"></label>
+          <span class="small_text">8~16자의 영문/숫자를 조합하여 입력</span>
+
+        </div>
+
+        <div class="pw2">
+          <label><input type="text" placeholder="비밀번호 확인" class="input_box"></label>
+        </div>
+      </div>
+
+      <div class="part2">
+        <div class="phone">
+          <label><input type="text" placeholder="휴대폰" class="phone-detail input_box"></label>
+          <span>-</span>
+          <label><input type="text" class="phone-detail input_box"></label>
+          <span>-</span>
+          <label><input type="text" class="phone-detail input_box"></label>
+          <button type="button" class="button">인증번호 발송</button>
+
+        </div>
+
+        <div class="phone-certi">
+          <label><input type="text" placeholder="전송 받으신 인증번호 6자리를 입력하세요" class="input_box"></label>
+          <button type="button" class="button">확인</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="opt">
+      <h4>선택항목</h4>
+      <label><input type="text" placeholder="성명" class="input_box"></label>
+
+      <div class="sex">
+        <span>성별</span>
+        <label><input type="radio" value="여자" checked>여자</label>
+        <label><input type="radio" value="남자">남자</label>
+      </div>
+    </div>
+
+    <div class="agree">
+      <div class="all">
+        <label>
+          <input type="checkbox" id="agree_all">
+          <span>모두 동의합니다</span>
+        </label>
+      </div>
+
+      <div class="list">
+        <label>
+          <input type="checkbox" value="1">
+          <span>본인은 만 14세 이상입니다.</span>
+        </label>
+        <label>
+          <input type="checkbox" value="2">
+          <span>이용약관에 동의합니다.</span>
+        </label>
+        <label>
+          <input type="checkbox" value="3">
+          <span>[필수] 개인정보 수집 및 이용에 동의합니다.</span>
+        </label>
+        <label>
+          <input type="checkbox" value="4">
+          <span>[선택] 개인정보 수집 및 이용에 동의합니다</span>
+        </label>
+        <label>
+          <input type="checkbox" value="5">
+          <span>[선택] 쿠폰이 발급되거나 혜택이 생기면 알림받기</span>
+        </label>
+      </div>
+    </div>
+
+    <button type="button" class="end">회원가입 신청하기</button>
+  </div>
+</body>
+
+</html>
