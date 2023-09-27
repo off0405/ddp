@@ -1,0 +1,171 @@
+
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.inner {
+  width: 666px;
+  margin: 50px auto;
+  padding: 70px 76px 20px;
+  background-color: #fff;
+  border-top: 3px solid #E73A3A;
+}
+
+.input_box {
+  border: 1px solid #bbb;
+  outline: none;
+  transition: 0.5s;
+  padding: 0 19px;
+  width: 626px;
+  height: 46px;
+  margin-bottom: 10px;
+}
+
+.small_text {
+  font-size: 11px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  margin-top: -7px;
+  color: #999;
+}
+
+input:focus {
+  border: 1px solid #E73A3A;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #E73A3A;
+  padding-bottom: 14px;
+}
+
+.part1 {
+  position: relative;
+}
+
+.id {
+  display: flex;
+  position: relative;
+
+}
+
+
+.phone-detail.input_box {
+  width: 100px;
+  height: 46px;
+}
+
+.phone {
+  position: relative;
+  margin-top: 20px;
+}
+
+.phone span {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+
+.button {
+  width: 140px;
+  height: 49px;
+  font-size: 12px;
+  border: none;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #cccccc;
+}
+
+.phone-certi {
+  position: relative;
+}
+
+.phone-certi label input.input_box {
+  width: 476px;
+}
+
+.essntial {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.opt h4 {
+  color: #333;
+}
+
+
+.sex {
+  margin-top: 10px;
+}
+
+.sex span {
+  padding-right: 30px;
+}
+
+.sex label {
+  padding-right: 20px;
+}
+
+
+.agree {
+
+  padding: 30px 40px;
+  border: 1px solid #bbb;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  font-size: 11px;
+}
+
+.agree .all {
+  padding-right: 70px;
+  display: flex;
+  align-items: center;
+
+}
+
+.agree label {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.end {
+  width: 282px;
+  height: 52px;
+  display: block;
+  margin: 40px auto;
+  height: 49px;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  box-sizing: border-box;
+  background-color: #E73A3A;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.end:hover {
+  background-color: #b11010;
+
+}
